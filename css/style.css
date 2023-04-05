@@ -1,0 +1,261 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root {
+    --bs-body: #030b15;
+    --bs-body-bg: #0b1d33;
+    --bs-primary: #00c4f4;
+    --bs-primary-rgb: 0, 196, 244;
+    --bs-secondary: #a4b4c3;
+    --bs-secondary-rgb: 164, 180, 195;
+}
+
+
+.box1{
+    background-color: #eef3f9;
+}
+.text-orenge{
+    color: #ff9700 !important;
+}
+.text-white{
+    color: white;
+}
+
+.text-blue{
+    color: blue;
+}
+.text-pink{
+    color: rgb(253, 55, 161);
+}
+.text-skyblue{
+    color: #00c4f4;
+}
+.text-green{
+    color: #49f400;
+}
+body {
+    background-color: var(--bs-body);
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.py-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.px-200 {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.big-circle {
+    top: 170px;
+    left: 0;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.medium-circle {
+    top: 500px;
+    right: 0;
+    animation: spin1 5s linear infinite;
+}
+
+@keyframes spin1 {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+.small-circle {
+    left: 90%;
+    top: 130px;
+}
+
+.bar-name ul .pre:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 17px;
+    background: #00c4f4;
+}
+
+.bar-name ul .soft:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 17px;
+    background: #ff9700;
+}
+
+.bar-name ul .bonus:before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 17px;
+    background: #12d176;
+}
+
+.progress::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -12px;
+    left: 75%;
+    border: 5px solid #00c4f4;
+}
+
+.countdown #id {
+    background-color: var(--bs-primary);
+    padding: 15px;
+}
+
+.heading h4::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: #00c4f4;
+    border-radius: 50%;
+}
+
+.heading h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: #00c4f4;
+    border-radius: 50%;
+}
+
+.message-info::before,
+.call-info::before {
+    content: "";
+    position: absolute;
+    right: -61px;
+    top: 44px;
+    align-items: center;
+    background-image: url(../img/line.png);
+    width: 122px;
+    height: 9px;
+}
+
+.chart-section {
+    background-image: url(../img/chart-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chart-section .chart {
+    background-color: var(--bs-body-bg);
+}
+
+.contact {
+    background-image: url(../img/contact_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.area-bg {
+    background-image: url(../img/big-area-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.area-bg .bottom-section ul li::marker {
+    color: white;
+}
+
+.footer-scroll::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #1f262f;
+    top: 50%;
+    z-index: -1;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.menu-bar .nav {
+    text-align: end;
+    width: 50%;
+    height: auto;
+    top: 100%;
+    right: 0;
+    display: inline-block;
+    background-color: var(--bs-body-bg);
+    z-index: 2;
+}
+
+::placeholder{
+    color: rgb(156, 151, 151)!important;
+}
+
+
+.team-members .member1 img{
+    border-radius: 50%;
+    filter: grayscale(100%);
+   
+    padding: 10px;
+}
+.team-members .member1:hover img{
+    filter: grayscale(0%);
+    border: 2px dotted #00c4f4; 
+
+}
+
